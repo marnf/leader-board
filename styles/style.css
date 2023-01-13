@@ -271,14 +271,64 @@ hr {
 }
 
 /* media quary */
-@media screen and (max-width:576) {
+@media screen and (max-width: 576px) {
+
+    .header,
+    .logo,
+    .menu,
+    .player,
+    .box {
+        flex-direction: column;
+    }
+
+    .menu-content {
+        padding: 10px;
+    }
+
+    .menu-pic {
+        margin-left: -37px;
+        padding: 10px;
+    }
+
+    .player {
+        margin-bottom: 20px;
+    }
 
     .player-heading {
         text-align: center;
+        margin-left: -25px;
+    }
+
+    .player-content {
+        margin-left: -1px;
     }
 
     .players {
-        display: grid;
+
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* second part */
+
+    .top-blog {
+        text-align: center;
+    }
+
+    .second-part {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .box-image {
+        text-align: center;
+    }
+
+    .box-content {
+        margin: 3px 20px 20px 10px;
+    }
+
+    .box-controlar {
+
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
